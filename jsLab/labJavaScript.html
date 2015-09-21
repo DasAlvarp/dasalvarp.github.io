@@ -97,8 +97,8 @@
         var length = origIn.length;
         var curChar = '';
 
-
-        out = origIn.replace(/\"1234567890[.,-\/#!$%\^&\*;:{}=\-_`\n|~()]/g," ").toLowerCase();
+        out = out.toLowerCase();
+        out = out.replace(/[\"123\'4567890.,-\/#!$%\^&\*;:{}=\-_`\n|~()]/g," ");
         document.getElementById('punctuation').innerHTML = out;
         
 
@@ -120,6 +120,8 @@
           }
           else if(isSpace == 0 && curChar ==' ')
           {
+            superWord = superWord.replace(/[\"123456\'7890.,-\/#!$%\^&\*;:{}=\-_`\n|~()]/g,"");
+          superWord = superWord.toLowerCase();
             wordsNoStop.push(superWord);
             superWord = '';
           }
@@ -146,7 +148,7 @@
 
         for(var x = 0; x < wordsNoStop.length; x++)
         {
-          wordsNoStop[x].replace(/\"1234567890[.,-\/#!$%\^&\*;:{}=\-_`\n|~()]/g," ").toLowerCase();
+          
           out += wordsNoStop[x] + "<br>";
         }
         document.getElementById("werdz").innerHTML = out;
@@ -189,10 +191,12 @@
           }
           if(f == 0)
           {
+            wordsNoStop[x].replace(/\"1234567890[.,-\/#!$%\^&\*;:{}=\-_`\n|~()]/g," ").toLowerCase();
             out += wordsNoStop[x] + "<br>";
             wordsStop.push(wordsNoStop[x]);
           }
         }
+
         document.getElementById('stahp').innerHTML = out;
 
         out = " ";
