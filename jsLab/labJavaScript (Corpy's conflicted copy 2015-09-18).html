@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Part 1</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="../cs3033.css">
+     
+  </head>
+
+ 
+
+  <body>
+  	<textarea name="input" rows="10" cols="45">Insert words here.
+    </textarea>
+    <form action="">
+      <p>
+        <button type="button" onclick="removeSpaces();">Do the thing!</button>
+      </p>
+    </form>
+    <p1>hiay
+    </p1>
+
+    <script type="text/javascript">
+      function removeSpaces()
+      {
+        var origIn = document.getElementById('input').value;
+        var curStep = 0;
+        var isSpace = 0;
+        var length = origIn.length();
+        var curChar = new String("");
+
+        var out = new String("");
+
+
+        for(x = 0; x < length; x++)
+        {
+          curChar = origIn.charAt(x);
+          if(isSpace == 1 && curChar == ' ')
+          {
+            //delete this space (do nothing)
+          }
+          else
+          {
+            out = out.concat(curChar);
+          }
+
+          if(curChar == ' ')
+          {
+            isSpace = 1;
+          }
+          else
+          {
+            isSpace = 0;
+          }
+        }
+        document.getElementById("p1").value = origIn;
+      }
+    </script>
+    
+  </body>
+
+  
+</html>

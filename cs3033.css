@@ -1,0 +1,26 @@
+body 
+{
+	color: #1F1F1F;
+	padding-left: 1em;
+	background-color: gray;
+}
+p
+{
+	color: black;
+}
+input
+{
+	color: green;
+}
+textarea
+{
+	color: green;
+}
+option
+{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+select
+{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
