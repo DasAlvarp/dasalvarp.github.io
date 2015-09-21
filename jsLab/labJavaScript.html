@@ -146,7 +146,7 @@
 
         for(var x = 0; x < wordsNoStop.length; x++)
         {
-          wordsStop[x] = wordsStop[x].replace(/\"1234567890[.,-\/#!$%\^&\*;:{}=\-_`\n|~()]/g," ").toLowerCase();
+          wordsNoStop[x] = wordsNoStop[x].replace(/\"1234567890[.,-\/#!$%\^&\*;:{}=\-_`\n|~()]/g," ").toLowerCase();
           out += wordsNoStop[x] + "<br>";
         }
         document.getElementById("werdz").innerHTML = out;
