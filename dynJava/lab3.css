@@ -1,0 +1,59 @@
+
+body{ background:olive;}
+
+
+
+div.theForm {
+     position: absolute; 
+     top:10px; left: 10px;
+     width:200px;
+     height:120px;
+     background:silver;
+}
+div.prev {
+     position: absolute;
+     top:140px; left: 10px;
+     width:200px;
+     height:200px;
+     background:silver;
+}
+
+div.display {
+     position: absolute;
+     top:10px; left: 220px;
+     width:500px;
+     height:500px;
+     background:black;
+}
+
+div.out{
+     position: absolute;
+     top:350px; left: 10px;
+     width:200px;
+     height:500px;
+     background:silver
+;
+}
+
+img.lander {
+                 position:relative;
+                 z-index :9;
+                 left:200px;
+                 top:10px;
+}
+
+img.surface {
+                 position:relative;
+                 z-index :1;
+                 top:360px;
+                 left:60px;
+}
+    
+
+div.comments {
+     position: absolute;
+     top:520px; left: 220px;
+     width:600px;
+     height:200px;
+     background:silver;
+}

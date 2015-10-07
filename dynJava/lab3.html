@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>
+			Alvaro's 3rd lab for JS, with a kinda-moving lander!
+		</title>
+		<link rel="stylesheet" type="text/css" href="lab3.css"/>
+		<script src="lab3.js" type=" text/javascript"></script>
+	</head>
+	<body>
+		<div id="theForm" class="theForm">
+			<form action ="">
+   				<p>
+   					y coordinate: <input type="text" id="topCoord" size ="5"/>
+   					<br>
+   					<input type="button" value ="Move it" onclick =" 
+      				move('lander', document.getElementById('topCoord').value)"/>
+   				</p>
+			</form>
+		</div>
+		<div id="prev" class="prev">
+			<h4>Old Coordinate</h4>
+			<p id="oldCoord">
+				Old values go here
+			</p>
+		</div>
+		<div id="out" class ="out">
+			<h4>New Coordinates</h4>
+		</div>
+		<div id ="display" class="display">
+	    	<img src="lander.jpg"
+	        	alt="Lunar Lander "
+	         	id="lander" 
+	         	class="lander"
+	    	/>
+	    	<br>
+	    	<img src="surface.jpg"
+	        	alt="Lunar Surface"
+	        	id="surface"
+	        	class="surface"
+	    	/>
+		</div>
+	</body>
+</html>
